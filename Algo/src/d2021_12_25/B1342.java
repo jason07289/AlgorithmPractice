@@ -3,6 +3,7 @@ package d2021_12_25;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -31,6 +32,7 @@ public class B1342 {
 			if(check[i]==0) {
 				check[i]=1;
 				choice[depth] = i;
+				System.out.println(Arrays.toString(choice));
 				dfs(depth+1);
 				check[i] =0;
 			}
