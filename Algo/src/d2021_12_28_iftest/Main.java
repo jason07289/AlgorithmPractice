@@ -51,4 +51,10 @@ public class Main {
 		System.out.println(sss);
 		System.out.println(sss.getClass());
 	}
+	public static void overload(int t) {
+		
+	}
+	public static void overload(String t) {
+		
+	}
 }
