@@ -11,8 +11,14 @@ public class dateTest {
 	public static void main(String[] args) throws ParseException {
         int yearInt = Integer.parseInt(Year.now().toString());
         yearInt++;
-        Date date = new SimpleDateFormat("yyyy-MM-dd").parse(yearInt+"-01-01");
+        Date date = new SimpleDateFormat("yyyy-MM-dd").parse("2023-01-01");
         LocalDateTime ldt = date.toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
+        LocalDateTime currentDate = LocalDateTime.now();
+        System.out.println(currentDate);
         System.out.println(ldt);
+        if(currentDate.isBefore(ldt)) {
+        	System.out.println("참");
+        }
+        
 	}
 }
