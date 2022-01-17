@@ -36,7 +36,7 @@ public class HolidayInfo
         {
             URL url = new URL(
                 "http://apis.data.go.kr/B090041/openapi/service/SpcdeInfoService/getHoliDeInfo"
-                + "?ServiceKey=8Cnd0dM2KzZnxJpiEd4BygQGMOCpNXRqhyYwRJ0xafpBXMEk9ImYB%2F71PN42Tp8ESI86%2BPP7BsHPbi06J5v7PA%3D%3D" // 서비스키
+                + "?ServiceKey=" // 서비스키
                 + "&solYear=" + y  // 연도
                 + "&solMonth=" + (m > 9 ? "" : "0") + m  // 월
                 );
